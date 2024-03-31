@@ -12,7 +12,7 @@ pip install -r requirement.txt
 ### Dployment
 To deploy first go into the deployment directory and run the command below after installing Flask using pip
 ```
-flask --app app.py run 
+python main.py 
 ```
 
 ## CNN Model 

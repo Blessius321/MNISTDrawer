@@ -18,3 +18,6 @@ def predict():
     img = Image.open(io.BytesIO(base64.b64decode(base64Image))).convert('L').resize((28,28), Image.Resampling.LANCZOS)
     pred = model.predict(img)
     return jsonify(prediction=pred)
+
+if __name__ == "__main__":
+         app.run(host='0.0.0.0')
