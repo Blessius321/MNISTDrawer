@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <title>MNIST Drawer</title>
+</head>
+<body>
+    <h1>MNIST </h1>
+    <h2>Draw the number you want to detect below!</h2>
+    <canvas width="280" height="280" id="drawing_canvas"></canvas>
+    <div>
+        <button class="btn" id="clr">Clear</button>
+        <button class="btn" id="sub">Submit</button>
+    </div>
+    <h2 id="pred">Prediction: </h2>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
